@@ -1,0 +1,74 @@
+body {
+    background-image: url("../img/chased.jpg");
+    background-size: cover;
+    font-size: 16px;
+
+}
+
+.nav li{
+    display: inline;
+}
+
+.cover {
+    background-color: rgba(300,300,300,0.40);
+    height: 100%;
+    width: 100%;
+}
+
+.header, .jumbotron {
+    border-bottom: none;
+}
+
+.navbar-default {
+    background-color: #71EEB8;
+}
+
+.navbar-default a {
+    color: white;
+    size: 16px;
+}
+
+.navbar-default a:hover {
+    color: #9370D8;
+}
+
+.social {
+    display: inline-block;
+}
+
+.jumbotron {
+    background-color: transparent;
+    margin-bottom: 0;
+}
+
+.jumbotron h1, p.lead{
+    color: white;
+}
+
+p {
+    color: white;
+    background-color: #9370D8;
+}
+
+h2 {
+    color: white;
+}
+
+.marketing {
+    margin: 0;
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+.list-inline {
+    text-align: center;
+}
+
+footer p {
+    text-align: center;
+}
+
+a, a:hover {
+    font-weight: bold;
+    color: #71EEB8;
+}
