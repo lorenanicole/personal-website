@@ -1,5 +1,47 @@
 {%  extends 'base.html' %}
+{% block content %}
+    <div class="container">
+    <div class="header">
+        <nav>
+          <ul class="navbar-default list-inline pull-right"> <!--nav navbar-fixed-top nav-tabs pull-right">-->
+            <li role="presentation" class="active"><a href="#">Projects</a></li>
+            <li role="presentation"><a href="#">Musings</a></li>
+          </ul>
+        </nav>
+      </div>
+    <div class="container cover">
+      <div class="jumbotron">
+        <h1>Lorena Mesa</h1>
+        <p class="lead"> Political analyst turned professional coder Lorena is the type of person who loves asking questions. Relentlessly
+            curious and always hungry to learn Lorena spends her free time teaching (and gaming!) in the community at large. Girl Develop It instructor,
+            Dev Bootcamp guide, and Adler Planetarium STEM mentor Lorena is a fervent believer in diversifying tech by creating beginner friendly
+            educational opportunities for women and other underrepresented groups. Most days you can find Lorena coding with Sprout Social's Platform
+            Engineering team.</p>
 
-{%  block content %}
-{#<iframe src="//giphy.com/embed/YCrzu9lq0AyBy" width="480" height="269" frameBorder="0" webkitAllowFullScreen mozallowfullscreen allowFullScreen></iframe>#}
-{%  endblock %}
+      </div>
+      <div class="row marketing">
+        <div class="col-lg-6 full">
+          <h2>Extracurriculars</h2>
+          <p>Coding. Organizing women in tech events. Playing Mortal Kombat. Chatting general geek chic as well as
+              <a href="https://www.youtube.com/watch?v=5_vVGPy4-rc">Carl Sagan's thoughts on apple pie</a>.</p>
+        </div>
+      </div>
+      <div class="social">
+            <ul>
+                <li><a href="https://twitter.com/loooorenanicole"><img src="/static/img/twitter-8745215053.png"></a></li>
+                <li><a href="http://www.linkedin.com/in/lorenamesa"><img src="/static/img/linkedin-8743712408.png"></a></li>
+                <li><a href="mailto:me@lorenamesa.com"><img src="/static/img/gmail-8743514776.png"></a></li>
+            </ul>
+        </div>
+      <footer class="footer">
+        <p>Background photo "<a href="https://www.flickr.com/photos/prodiffusion/8543871309">Street ART</a>" by <a href="https://www.flickr.com/photos/prodiffusion/">prodiffusion</a> is licensed under <a href="http://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
+      </footer>
+    </div>
+    </div>
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="/static/js/ie10-viewport-bug-workaround.js"></script>
+  </div>
+{% endblock %}
+
+
