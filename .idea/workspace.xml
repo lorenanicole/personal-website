@@ -50,19 +50,19 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="index.html" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/website/templates/website/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="8" selection-start="2735" selection-end="2735" vertical-scroll-proportion="0.6703297" vertical-offset="491" max-vertical-offset="855">
+            <state line="15" column="31" selection-start="483" selection-end="483" vertical-scroll-proportion="-8.75" vertical-offset="15" max-vertical-offset="1380">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="base.html" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="base.html" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/website/templates/base.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="0" selection-start="1397" selection-end="1397" vertical-scroll-proportion="-11.416667" vertical-offset="266" max-vertical-offset="705">
+            <state line="35" column="18" selection-start="0" selection-end="1418" vertical-scroll-proportion="0.71153843" vertical-offset="266" max-vertical-offset="705">
               <folding />
             </state>
           </provider>
@@ -761,16 +761,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/website/templates/website/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="0" selection-start="1397" selection-end="1397" vertical-scroll-proportion="-11.416667" vertical-offset="266" max-vertical-offset="705">
+        <state line="15" column="31" selection-start="483" selection-end="483" vertical-scroll-proportion="-8.75" vertical-offset="15" max-vertical-offset="1380">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/website/templates/website/index.html">
+    <entry file="file://$PROJECT_DIR$/website/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="8" selection-start="2735" selection-end="2735" vertical-scroll-proportion="0.6703297" vertical-offset="491" max-vertical-offset="855">
+        <state line="35" column="18" selection-start="0" selection-end="1418" vertical-scroll-proportion="0.71153843" vertical-offset="266" max-vertical-offset="705">
           <folding />
         </state>
       </provider>
