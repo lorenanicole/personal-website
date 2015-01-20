@@ -1,6 +1,3 @@
-{%  extends 'base.html' %}
-{% block content %}
-
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -19,7 +16,7 @@
     <!-- Custom styles for this template -->
     <link href="/static/css/jumbotron-narrow.css" rel="stylesheet">
     <!-- My custom styles for this template -->
-    <link href="/static/css/custom.css" rel="stylesheet">
+    <link href="/static/css/blog.css" rel="stylesheet">
 
 {#    <meta name="viewport" content="width=360px, initial-scale=0.5" />#}
 
@@ -38,39 +35,24 @@
     <div class="header">
         <nav>
           <ul class="navbar-default list-inline pull-right"> <!--nav navbar-fixed-top nav-tabs pull-right">-->
-            <li role="presentation" class="active"><a href="#">Projects</a></li>
-            <li role="presentation"><a href='{% url musings %}'>Musings</a></li>
+            <li role="presentation"><a href='{% url index %}'>Home</a></li>
+            <li role="presentation"><a href="#">Projects</a></li>
           </ul>
         </nav>
-{#        <h3 class="text-muted">Project name</h3>#}
       </div>
     <div class="container cover">
       <div class="jumbotron">
-        <h1>Lorena Mesa</h1>
-        <p class="lead"> Political analyst turned professional coder Lorena is the type of person who loves asking questions. Relentlessly
-            curious &amp; always hungry to learn Lorena spends her free time teaching (&amp; gaming!) in the community. PyLadies Chicago co-organizer,
-            Girl Develop It instructor, Dev Bootcamp guide, &amp; Adler Planetarium STEM mentor Lorena is a fervent believer in diversifying tech by creating
-            beginner friendly educational opportunities for women &amp; other underrepresented groups. Most days you can find Lorena coding with Sprout Social's
-            Platform Engineering team.</p>
-{#        <p><a class="btn btn-lg btn-success" href="#" role="button">Sign up today</a></p>#}
-      </div>
-      <div class="row marketing">
-        <div class="col-lg-6 full">
-          <h2>Let's chat!</h2>
-          <p>Coding. Organizing women in tech &amp; PyLadies events. Mortal Kombat &amp; Skyrim. General geek chic &amp;
-             Carl Sagan (e.g. <a href="https://www.youtube.com/watch?v=5_vVGPy4-rc">his thoughts on apple pie</a>).</p>
-        </div>
-{#        <div class="col-lg-6">#}
-{#            {% block content %} {% endblock %}#}
-{#        </div>#}
-      </div>
-      <div class="social">
-            <ul> <!--class="list-inline col-lg-6">-->
-                <li><a href="https://twitter.com/loooorenanicole"><img src="/static/img/twitter-8745215053.png"></a></li>
-                <li><a href="http://www.linkedin.com/in/lorenamesa"><img src="/static/img/linkedin-8743712408.png"></a></li>
-                <li><a href="mailto:me@lorenamesa.com"><img src="/static/img/gmail-8743514776.png"></a></li>
-            </ul>
-        </div>
+        {% block content %}
+            {% for article in articles %}
+                <h2 class="article-title">{{ article.title }} </h2>
+                <h4 class="article-title date"> | {{ article.published_date }}</h4>
+                <p class="lead">{{article.text}}</p>
+                {% if article.image_url %}
+{#                    <img class="blog-img" src="{{ article.image_url }}" title="source: imgur.com"/>#}
+                {% endif %}
+            {% endfor %}
+        {%  endblock %}
+     </div>
       <footer class="footer">
         <p>Background photo "<a href="https://www.flickr.com/photos/prodiffusion/8543871309">Street ART</a>" by <a href="https://www.flickr.com/photos/prodiffusion/">prodiffusion</a> is licensed under <a href="http://creativecommons.org/licenses/by/2.0/">CC BY 2.0</a></p>
       </footer>
@@ -83,5 +65,3 @@
   </div>
   </body>
 </html>
-
-{%  endblock %}
